@@ -23,6 +23,7 @@ public class StreamOfMap {
                 .peek(s -> System.out.printf("filename=%s%n", s)) //파일명 출력
                 .map(s -> s.substring(s.indexOf('.')+1)) // 확장자만 추출
                 .peek(s-> System.out.printf("extension=%s%n",s)) //확장자 출력
+                .peek(s-> System.out.printf("extension=%s%n",s)) //확장자 출력
                 .forEach(System.out::println);
     }
 
